@@ -1,0 +1,36 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"main": ".open-next/worker.js",
+	"name": "joe-caruso-stories-website",
+	"compatibility_date": "2026-08-01",
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
+	"assets": {
+		"directory": ".open-next/assets",
+		"binding": "ASSETS"
+	},
+	"services": [
+		{
+			// Self-reference service binding, the service name must match the worker name
+			// see https://opennext.js.org/cloudflare/caching
+			"binding": "WORKER_SELF_REFERENCE",
+			"service": "joe-caruso-stories-website"
+		}
+	],
+	"images": {
+		// Enable image optimization
+		// see https://opennext.js.org/cloudflare/howtos/image
+		"binding": "IMAGES"
+	},
+	"kv_namespaces": [
+		{
+			// Incremental cache backing store, so deployed pages actually revalidate
+			// instead of being stuck behind Cloudflare's edge cache
+			// see https://opennext.js.org/cloudflare/caching
+			"binding": "NEXT_INC_CACHE_KV",
+			"id": "faaf17c5df54463f887ce3a6543ffda4"
+		}
+	]
+}
