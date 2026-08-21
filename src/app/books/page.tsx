@@ -14,7 +14,7 @@ export default function BooksPage() {
   return (
     <section className="py-20 sm:py-28">
       <Container>
-        <SectionHeading eyebrow="The Books" title="Rhyming stories, big truths" />
+        <SectionHeading eyebrow="The Books" title="Children's stories with big truths" />
         <div className="mt-12 grid gap-8 sm:grid-cols-3">
           {BOOKS.map((book) => (
             <BookCard
@@ -25,6 +25,7 @@ export default function BooksPage() {
               cardQuote={book.cardQuote}
               coverImage={book.coverImage}
               amazonUrl={book.amazonUrl}
+              award={"award" in book ? book.award : undefined}
             />
           ))}
         </div>

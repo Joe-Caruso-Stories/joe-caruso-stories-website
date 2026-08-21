@@ -21,10 +21,25 @@ const slugs = fs
 const posts = slugs.map((slug) => {
   const raw = fs.readFileSync(path.join(BLOG_DIR, `${slug}.md`), "utf8");
   const { data, content } = matter(raw);
-  const html = micromark(content, {
+  const rawHtml = micromark(content, {
     extensions: [gfm()],
     htmlExtensions: [gfmHtml()],
   });
+  // Every link in post body content opens in a new tab, per Joe's request —
+  // readers shouldn't lose their place in the post when they follow a link.
+  const withNewTabLinks = rawHtml.replace(
+    /<a href="/g,
+    '<a target="_blank" rel="noopener noreferrer" href="',
+  );
+  // Every post body opens with a heading that just repeats the frontmatter
+  // title (e.g. "<h2><strong>The Hero's Journey</strong></h2>") — the page
+  // template already renders that title as its own <h1>, so drop the
+  // duplicate here rather than showing it twice. Same story for the "By Joe
+  // Caruso Stories" byline right after it — the page renders that alongside
+  // the date now, as one combined byline/date line under the title.
+  const html = withNewTabLinks
+    .replace(/^<h2>.*?<\/h2>\n?/, "")
+    .replace(/^<h4>By Joe Caruso Stories<\/h4>\n?/, "");
 
   return {
     slug,

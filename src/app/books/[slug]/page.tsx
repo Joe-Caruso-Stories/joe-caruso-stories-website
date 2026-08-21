@@ -49,6 +49,7 @@ export default async function BookDetailPage({
         blurb={book.blurb}
         coverImage={book.coverImage}
         story={"story" in book ? book.story : undefined}
+        award={"award" in book ? book.award : undefined}
         links={[{ label: "Amazon", url: book.amazonUrl }]}
       />
 
@@ -65,6 +66,7 @@ export default async function BookDetailPage({
                 cardQuote={b.cardQuote}
                 coverImage={b.coverImage}
                 amazonUrl={b.amazonUrl}
+                award={"award" in b ? b.award : undefined}
               />
             ))}
           </div>

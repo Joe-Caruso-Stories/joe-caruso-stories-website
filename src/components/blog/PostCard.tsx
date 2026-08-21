@@ -7,6 +7,8 @@ export function PostCard({ post }: { post: BlogPostMeta }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
+      target="_blank"
+      rel="noopener noreferrer"
       className="group flex flex-col overflow-hidden rounded-[20px] border border-sand bg-paper p-1 transition-all duration-200 hover:-translate-y-1.5 hover:shadow-lg"
     >
       {post.coverImage && (

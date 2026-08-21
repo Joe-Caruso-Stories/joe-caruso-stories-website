@@ -45,6 +45,10 @@ export const BOOKS = [
     amazonUrl:
       "https://www.amazon.com/Image-God-Story-Identity-Value/dp/1777323134",
     coverImage: "/images/books/in-the-image-of-god.jpg",
+    award: {
+      image: "/images/awards/readers-choice-finalist.png",
+      label: "Readers' Choice Book Award — Finalist",
+    },
     story: [
       {
         type: "paragraph",

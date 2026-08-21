@@ -22,10 +22,10 @@ function ArrowButton({
       type="button"
       onClick={onClick}
       aria-label={direction === "right" ? "Show next reviews" : "Show previous reviews"}
-      className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-sand bg-paper text-taupe transition-colors duration-150 hover:border-amber hover:text-amber-deep"
+      className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-paper text-charcoal shadow-md transition-colors duration-150 hover:text-amber-deep"
     >
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-        {direction === "right" ? <path d="M5 12h14M13 6l6 6-6 6" /> : <path d="M19 12H5M11 6l-6 6 6 6" />}
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+        {direction === "right" ? <path d="M9 6l6 6-6 6" /> : <path d="M15 6l-6 6 6 6" />}
       </svg>
     </button>
   );

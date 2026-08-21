@@ -9,6 +9,7 @@ export function BookHero({
   blurb,
   coverImage,
   story,
+  award,
   links,
 }: {
   title: string;
@@ -19,26 +20,34 @@ export function BookHero({
     | { type: "paragraph"; text: string; lead?: string }
     | { type: "quote"; text: string }
   )[];
+  award?: { image: string; label: string };
   links: RetailerLink[];
 }) {
   return (
     <section className="bg-peach/50 py-16 sm:py-24">
       <Container className="grid items-start gap-12 sm:grid-cols-2">
-        <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden shadow-2xl">
-          {coverImage ? (
-            <Image
-              src={coverImage}
-              alt={`${title} book cover`}
-              fill
-              sizes="(max-width: 640px) 90vw, 40vw"
-              className="object-cover"
-              priority
-            />
-          ) : (
-            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-amber/80 to-clay/70 p-6">
-              <p className="text-center font-display text-2xl font-bold text-on-gold">
-                {title}
-              </p>
+        <div className="mx-auto w-full max-w-md">
+          <div className="relative aspect-square w-full overflow-hidden shadow-2xl">
+            {coverImage ? (
+              <Image
+                src={coverImage}
+                alt={`${title} book cover`}
+                fill
+                sizes="(max-width: 640px) 90vw, 40vw"
+                className="object-cover"
+                priority
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-amber/80 to-clay/70 p-6">
+                <p className="text-center font-display text-2xl font-bold text-on-gold">
+                  {title}
+                </p>
+              </div>
+            )}
+          </div>
+          {award && (
+            <div className="relative mx-auto mt-8 h-40 w-40 drop-shadow-lg">
+              <Image src={award.image} alt={award.label} fill sizes="160px" />
             </div>
           )}
         </div>

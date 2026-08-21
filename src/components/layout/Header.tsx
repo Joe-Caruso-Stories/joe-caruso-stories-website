@@ -18,7 +18,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-sand bg-paper">
+    <header className="sticky top-0 z-50 bg-paper shadow-[0_5px_14px_0_rgba(36,59,107,0.08)]">
       <Container
         className={`flex items-center justify-between transition-[height] duration-300 ease-in-out ${
           isScrolled ? "h-16 sm:h-18" : "h-24 sm:h-26"

@@ -8,7 +8,7 @@ const variantClasses: Record<Variant, string> = {
     "bg-amber text-on-gold hover:bg-amber-deep shadow-sm shadow-amber/30 hover:-translate-y-0.5",
   secondary:
     "bg-transparent text-charcoal border-2 border-charcoal hover:bg-charcoal hover:text-paper",
-  sky: "bg-teal text-paper hover:bg-teal-deep shadow-sm shadow-teal/30 hover:-translate-y-0.5",
+  sky: "bg-teal text-charcoal shadow-sm shadow-teal/30 hover:-translate-y-0.5",
   ghost: "bg-transparent text-teal hover:text-charcoal",
 };
 

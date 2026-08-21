@@ -25,7 +25,13 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <Container className="grid items-center gap-6 sm:grid-cols-[460px_1fr] sm:gap-10">
+        <div
+          className="mx-auto grid w-full max-w-[1500px] items-center gap-6 sm:grid-cols-[460px_1fr] sm:gap-6"
+          style={{
+            paddingLeft: "clamp(20px, 3.6vw, 52px)",
+            paddingRight: "16px",
+          }}
+        >
           <div>
             <span className="mb-5 inline-block rounded-full bg-peach px-4 py-1.5 font-display text-[12.5px] font-bold uppercase tracking-[0.16em] text-teal-deep">
               Award-winning children&rsquo;s books
@@ -42,9 +48,6 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap gap-3.5">
               <Button href="/books" variant="primary">
                 Explore the Books
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M13 6l6 6-6 6" />
-                </svg>
               </Button>
             </div>
           </div>
@@ -59,13 +62,13 @@ export default function Home() {
               priority
             />
           </div>
-        </Container>
+        </div>
       </section>
 
       <TrustStrip />
 
       {/* Books */}
-      <section className="bg-ivory py-24">
+      <section className="bg-peach py-24">
         <Container>
           <SectionHeading
             eyebrow="The Books"
@@ -87,6 +90,7 @@ export default function Home() {
                 cardQuote={book.cardQuote}
                 coverImage={book.coverImage}
                 amazonUrl={book.amazonUrl}
+                award={"award" in book ? book.award : undefined}
               />
             ))}
           </div>
@@ -94,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* Reviews */}
-      <section className="bg-gradient-to-b from-peach to-ivory py-24">
+      <section className="bg-paper py-24">
         <Container>
           <SectionHeading eyebrow="Reader Reviews" title="Loved by parents, grandparents, and little ones." />
           <div className="mt-12">
@@ -108,7 +112,7 @@ export default function Home() {
         <Container className="flex justify-center">
         <div className="grid items-center gap-6 sm:grid-cols-[304px_auto] sm:gap-24">
           <div className="mx-auto w-full max-w-[304px] sm:mx-0">
-            <div className="relative aspect-square overflow-hidden rounded-full shadow-xl ring-8 ring-paper">
+            <div className="relative aspect-square overflow-hidden rounded-full ring-8 ring-paper">
               <Image
                 src="/images/about/joe-portrait-round.jpg"
                 alt="Author Joe Caruso"

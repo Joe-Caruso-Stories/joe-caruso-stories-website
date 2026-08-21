@@ -6,7 +6,7 @@ function SocialIcon({ children, ...props }: React.ComponentProps<"a">) {
   return (
     <a
       {...props}
-      className="flex h-10 w-10 items-center justify-center rounded-full bg-peach text-charcoal transition-colors hover:bg-amber hover:text-on-gold"
+      className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-amber hover:text-on-gold"
     >
       {children}
     </a>
@@ -17,16 +17,16 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-sand bg-paper">
+    <footer className="bg-[#1F323A]">
       <Container className="flex flex-col gap-10 py-14 sm:flex-row sm:justify-between">
         <div className="max-w-xs">
-          <p className="font-display text-2xl font-bold text-charcoal">
+          <p className="font-display text-2xl font-bold text-white">
             Joe Caruso
           </p>
           <p className="mt-0.5 font-display text-xs font-medium uppercase tracking-[0.42em] text-amber">
             Stories
           </p>
-          <p className="mt-4 font-sans text-sm leading-relaxed text-taupe">
+          <p className="mt-4 font-sans text-sm leading-relaxed text-white/70">
             Inspirational children&rsquo;s books that help kids{" "}
             <span className="whitespace-nowrap">aim high.</span>
           </p>
@@ -64,7 +64,7 @@ export function Footer() {
 
         <div className="flex gap-14">
           <div>
-            <p className="font-display text-sm font-bold uppercase tracking-[0.06em] text-charcoal">
+            <p className="font-display text-sm font-bold uppercase tracking-[0.06em] text-white">
               Books
             </p>
             <div className="mt-3.5 flex flex-col gap-2.5">
@@ -72,7 +72,7 @@ export function Footer() {
                 <Link
                   key={book.slug}
                   href={`/books/${book.slug}`}
-                  className="font-sans text-sm text-taupe hover:text-amber-deep"
+                  className="font-sans text-sm text-white/70 hover:text-amber"
                 >
                   {book.title}
                 </Link>
@@ -80,20 +80,20 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <p className="font-display text-sm font-bold uppercase tracking-[0.06em] text-charcoal">
+            <p className="font-display text-sm font-bold uppercase tracking-[0.06em] text-white">
               Explore
             </p>
             <div className="mt-3.5 flex flex-col gap-2.5">
-              <Link href="/about" className="font-sans text-sm text-taupe hover:text-amber-deep">
+              <Link href="/about" className="font-sans text-sm text-white/70 hover:text-amber">
                 About Joe
               </Link>
-              <Link href="/blog" className="font-sans text-sm text-taupe hover:text-amber-deep">
+              <Link href="/blog" className="font-sans text-sm text-white/70 hover:text-amber">
                 Blog
               </Link>
-              <Link href="/#newsletter" className="font-sans text-sm text-taupe hover:text-amber-deep">
+              <Link href="/#newsletter" className="font-sans text-sm text-white/70 hover:text-amber">
                 Newsletter
               </Link>
-              <Link href="/contact" className="font-sans text-sm text-taupe hover:text-amber-deep">
+              <Link href="/contact" className="font-sans text-sm text-white/70 hover:text-amber">
                 Contact
               </Link>
             </div>
@@ -101,8 +101,8 @@ export function Footer() {
         </div>
       </Container>
 
-      <Container className="flex flex-wrap justify-between gap-3 border-t border-sand py-6">
-        <span className="font-sans text-xs text-taupe-faint">
+      <Container className="flex flex-wrap justify-between gap-3 border-t border-white/15 py-6">
+        <span className="font-sans text-xs text-white/50">
           © {year} Joe Caruso Stories. All rights reserved.
         </span>
       </Container>

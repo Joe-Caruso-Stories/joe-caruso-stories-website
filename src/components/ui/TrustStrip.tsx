@@ -6,7 +6,7 @@ const ITEMS = [
 
 export function TrustStrip() {
   return (
-    <div className="border-b border-sand bg-paper">
+    <div className="bg-paper">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-6 py-5">
         {ITEMS.map((item, i) => (
           <div key={item} className="flex items-center gap-4">

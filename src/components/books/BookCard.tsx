@@ -8,6 +8,7 @@ export function BookCard({
   cardQuote,
   coverImage,
   amazonUrl,
+  award,
 }: {
   slug: string;
   title: string;
@@ -15,19 +16,27 @@ export function BookCard({
   cardQuote?: string;
   coverImage?: string;
   amazonUrl?: string;
+  award?: { image: string; label: string };
 }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-[22px] border border-sand bg-paper shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
       <Link href={`/books/${slug}`} className="relative block aspect-square overflow-hidden bg-peach">
-        {coverImage && (
-          <Image
-            src={coverImage}
-            alt={`${title} book cover`}
-            fill
-            sizes="(max-width: 640px) 90vw, 30vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-        )}
+        <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-105">
+          {coverImage && (
+            <Image
+              src={coverImage}
+              alt={`${title} book cover`}
+              fill
+              sizes="(max-width: 640px) 90vw, 30vw"
+              className="object-cover"
+            />
+          )}
+          {award && (
+            <div className="absolute right-3 top-3 aspect-square w-[18.4%] drop-shadow-md">
+              <Image src={award.image} alt={award.label} fill sizes="18vw" />
+            </div>
+          )}
+        </div>
       </Link>
       <div className="flex flex-1 flex-col p-6">
         <Link href={`/books/${slug}`}>

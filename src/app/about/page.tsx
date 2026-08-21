@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-peach/50 py-16 sm:py-24">
+      <section className="bg-peach py-16 sm:py-24">
         <Container className="grid items-center gap-12 sm:grid-cols-[0.8fr_1.2fr]">
           <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-3xl shadow-xl">
             <Image
