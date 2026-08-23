@@ -16,7 +16,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section
-        className="relative overflow-hidden py-12 sm:py-16"
+        className="relative overflow-hidden py-12 sm:pb-40 sm:pt-16"
         style={{
           backgroundColor: "var(--color-peach)",
           backgroundImage: "url('/images/hero/sky-background.jpg')",
@@ -40,10 +40,9 @@ export default function Home() {
               Stories inspiring children to{" "}
               <span className="whitespace-nowrap text-amber-deep">aim high.</span>
             </h1>
-            <p className="mt-5 font-sans text-lg leading-[1.55] text-taupe">
+            <p className="mt-5 max-w-[290px] font-sans text-lg leading-[1.55] text-taupe">
               Beautifully illustrated picture books that help kids see
-              themselves as God sees them — full of wonder, value, and
-              endless possibility.
+              themselves as God sees them.
             </p>
             <div className="mt-8 flex flex-wrap gap-3.5">
               <Button href="/books" variant="primary">
@@ -52,9 +51,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative hidden w-full sm:block" style={{ aspectRatio: "3137/1269" }}>
+          <div
+            className="relative hidden w-full sm:block"
+            style={{ aspectRatio: "1200/650", transform: "scale(1.2)", transformOrigin: "top right" }}
+          >
             <Image
-              src="/images/hero/books-collage.png"
+              src="/images/hero/hero-banner-books.png"
               alt="In the Beginning… God, In the Image of God, and Freddy Finds God book covers"
               fill
               sizes="(min-width: 640px) 60vw, 100vw"
