@@ -69,7 +69,7 @@ I pray that you embrace this promise and all the power that goes with it. A beau
 
 * * *
 
-![](/images/blog/2024-06-News-Letter-2.png)
+![](/images/blog/aim-high-newsletter-logo.png)
 
 If you enjoyed this post, consider subscribing to the **Aim High Newsletter**. You’ll receive my monthly spiritual insight and more, directly into your inbox. Just hit the subscribe button below to sign up.
 

@@ -22,3 +22,5 @@ To set our minds on things above is to look to something greater than ourselves.
 When we set our minds on God and His ways, something interesting happens. All the world’s cares come into their proper focus. We see people differently. We see our job differently. We navigate life’s challenges differently. Our attitude begins to change. Earthly things become less overwhelming when we look at them from God’s vantage point.
 
 It’s great to know that we serve a good God who wants what’s best for us. He is our ideal. He knows the challenges we face. Let’s keep our eyes on Him and allow God to guide our thoughts and actions. By focusing your mind on God, I hope you can see clearly how to navigate the challenges you find yourself facing today. When God is our focus, there’s nothing that’s impossible.
+
+![](/images/blog/aim-high-newsletter-logo.png)

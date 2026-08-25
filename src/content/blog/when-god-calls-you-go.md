@@ -98,3 +98,5 @@ The reality is, that there will always be a cost to following Jesus. But there w
 By choosing to go, the disciples experienced an adventure they never could have imagined. They got to walk with Jesus, learn from him, partner with the King of Kings, and participate in the great commission to change the world. All because they chose to follow him.
 
 The amazing thing is, that Jesus is still calling today! We too, can have a life-transforming relationship with him. As long as we accept the call. Let’s not be like others we read about who missed the call of God. Let’s be like the disciples and say yes to Jesus’ call. When God calls, you go!
+
+![](/images/blog/aim-high-newsletter-logo.png)

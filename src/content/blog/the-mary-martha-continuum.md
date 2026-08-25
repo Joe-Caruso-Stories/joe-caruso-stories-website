@@ -76,3 +76,5 @@ _Is there something to embrace, that you may regret if you miss it?_ 
 _Does this moment call for a task or connection?_
 
 Seeing what’s called for in a particular situation isn’t always obvious. But we can usually see what is needed when we step back and look with a clear perspective. Some situations, will call for hard work and completing a task, while others will call for reflection and connection. By knowing the difference between the two, we can make the most out of every situation.
+
+![](/images/blog/aim-high-newsletter-logo.png)

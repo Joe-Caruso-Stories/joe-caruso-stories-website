@@ -37,4 +37,6 @@ There’s a similar passage in Matthew 6 where Jesus is encouraging us to be mor
 
 The practical message here is that we shouldn’t be so focused on short-term challenges that we lose sight of long-term fulfillment. The routine things we do today should lead to a better tomorrow. If we find ourselves in a continuous cycle of maintaining our everyday existence, we need to ask ourselves if there’s something more meaningful we can set our sights on.
 
-Do you feel thirsty and unfulfilled? I think we all do at times. Like the woman at the well, we can have our thirst eternally quenched. We need to recognize that Jesus is the only source who can quench our thirst. We need to ask Him to fill us with His living water. 
+Do you feel thirsty and unfulfilled? I think we all do at times. Like the woman at the well, we can have our thirst eternally quenched. We need to recognize that Jesus is the only source who can quench our thirst. We need to ask Him to fill us with His living water.
+
+![](/images/blog/aim-high-newsletter-logo.png)

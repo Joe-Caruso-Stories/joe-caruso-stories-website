@@ -50,3 +50,5 @@ So, how do we make room for Jesus in all the hustle and bustle taking place this
 3.  **Let the love of Jesus shine through you.** Probably the best way to make room for Jesus this Christmas is to love others. Who needs to feel the love of Jesus this Christmas? Let’s make sure that we reflect His love wherever we go. If there’s someone special on our heart, let’s make sure we contact them.
 
 By making room for Jesus this Christmas, we consciously place Him in His rightful position as Lord and Saviour of our life. In doing so, Jesus refills us with His love and we’re able to share His love with others around us. This Christmas season, may your heart be filled with the love of Jesus and may it overflow to everyone you meet.
+
+![](/images/blog/aim-high-newsletter-logo.png)

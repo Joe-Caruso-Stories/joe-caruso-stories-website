@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -44,8 +45,8 @@ export default function AboutPage() {
       <section className="py-20 sm:py-28">
         <Container className="max-w-3xl">
           <SectionHeading eyebrow="Life & Family" title="Beyond the books" align="left" />
-          <div className="mt-6 flex flex-col gap-6 font-sans leading-relaxed text-charcoal/90 sm:flex-row-reverse sm:items-start sm:gap-10">
-            <div className="relative mx-auto aspect-[4/3] w-full max-w-sm shrink-0 overflow-hidden rounded-2xl shadow-sm sm:mx-0">
+          <div className="mt-6 flex flex-col gap-6 font-sans leading-relaxed text-charcoal/90 sm:flex-row-reverse sm:gap-10">
+            <div className="relative mx-auto aspect-[3/4] w-full max-w-sm shrink-0 overflow-hidden rounded-2xl shadow-sm sm:mx-0 sm:aspect-auto sm:max-w-md">
               <Image
                 src="/images/about/joe-heather.jpg"
                 alt="Joe Caruso with his wife Heather"
@@ -56,24 +57,55 @@ export default function AboutPage() {
             </div>
             <div className="space-y-4 text-[16.5px]">
               <p>
-                Joe Caruso writes thought-provoking, inspirational
-                children&rsquo;s books with a gift for rhyme and heart. Born
-                in Niagara Falls, New York, he grew up in the Niagara Region
-                of Ontario, Canada, where he taught in St. Catharines for
-                over two decades.
+                Joe Caruso is a Christian children&rsquo;s book author who
+                writes stories with big truths to help kids see themselves
+                the way God sees them. He wrote his first children&rsquo;s
+                picture book,{" "}
+                <Link href="/books/freddy-finds-god" className="font-semibold text-link hover:underline">
+                  Freddy Finds God
+                </Link>
+                , in 2020, followed by{" "}
+                <Link href="/books/in-the-image-of-god" className="font-semibold text-link hover:underline">
+                  In the Image of God
+                </Link>{" "}
+                and{" "}
+                <Link href="/books/in-the-beginning-god" className="font-semibold text-link hover:underline">
+                  In the Beginning&hellip;God
+                </Link>
+                .
               </p>
               <p>
-                Joe and his wife Heather raised three incredible children and
-                now delight in six &ldquo;super incredible&rdquo;
-                grandchildren. These days, when he isn&rsquo;t writing,
-                you&rsquo;ll find Joe playing guitar, dancing, and chasing the
-                next good story.
+                Before he was an author, Joe was a carpenter &mdash; but he
+                always had a passion for teaching, and spent years teaching
+                Sunday School at his home church. That experience led him on
+                an unexpected path: Joe became a high school teacher,
+                spending over two decades teaching construction to teenagers
+                in St. Catharines, Ontario.
+              </p>
+              <p>
+                Born in Niagara Falls, New York, Joe moved north of the
+                border at the age of four with his mother and brother. They
+                settled in the beautiful Niagara Region of Ontario, Canada,
+                where he still lives today. Joe and his wife Heather raised
+                three incredible children and now delight in six
+                &ldquo;super incredible&rdquo; grandchildren who they love to
+                bits.
+              </p>
+              <p>
+                When Joe isn&rsquo;t writing, you&rsquo;ll find him playing
+                guitar, dancing, or planning his next trip.
               </p>
               <p>
                 Alongside his picture books, Joe writes the{" "}
-                <strong>Aim High</strong> newsletter and blog — monthly
-                devotional reflections exploring faith, Scripture, and
-                everyday life.
+                <Link href="/#newsletter" className="font-semibold text-link hover:underline">
+                  Aim High newsletter
+                </Link>{" "}
+                and{" "}
+                <Link href="/blog" className="font-semibold text-link hover:underline">
+                  blog
+                </Link>{" "}
+                &mdash; short reflections that combine faith, Scripture, and
+                practical living.
               </p>
             </div>
           </div>

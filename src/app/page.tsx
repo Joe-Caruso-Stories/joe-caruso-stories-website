@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -6,6 +7,7 @@ import { TrustStrip } from "@/components/ui/TrustStrip";
 import { BookCard } from "@/components/books/BookCard";
 import { PostCard } from "@/components/blog/PostCard";
 import { TestimonialStrip } from "@/components/testimonials/TestimonialStrip";
+import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import { BOOKS } from "@/lib/site-data";
 import { getAllPosts } from "@/lib/blog";
 
@@ -40,9 +42,10 @@ export default function Home() {
               Stories inspiring children to{" "}
               <span className="whitespace-nowrap text-amber-deep">aim high.</span>
             </h1>
-            <p className="mt-5 max-w-[290px] font-sans text-lg leading-[1.55] text-taupe">
+            <p className="mt-5 max-w-[330px] font-sans text-lg leading-[1.55] text-taupe">
               Beautifully illustrated picture books that help kids see
-              themselves as God sees them.
+              themselves as God sees them — full of wonder, value, and
+              endless possibility.
             </p>
             <div className="mt-8 flex flex-wrap gap-3.5">
               <Button href="/books" variant="primary">
@@ -53,7 +56,7 @@ export default function Home() {
 
           <div
             className="relative hidden w-full sm:block"
-            style={{ aspectRatio: "1200/650", transform: "scale(1.2)", transformOrigin: "top right" }}
+            style={{ aspectRatio: "1200/650", transform: "scale(1.15)", transformOrigin: "top right" }}
           >
             <Image
               src="/images/hero/hero-banner-books.png"
@@ -136,11 +139,22 @@ export default function Home() {
               then, through Christ, anything is possible.&rdquo;
             </p>
             <p className="mt-5 font-sans text-[16.5px] leading-relaxed text-taupe">
-              Joe Caruso writes thought-provoking, inspirational
-              children&rsquo;s books with a gift for rhyme and heart. Born in
-              Niagara Falls, New York, he grew up in the Niagara Region of
-              Ontario, Canada, where he taught in St. Catharines for over two
-              decades.
+              Joe Caruso is a Christian children&rsquo;s book author who
+              writes stories with big truths to help kids see themselves the
+              way God sees them. He wrote his first children&rsquo;s picture
+              book,{" "}
+              <Link href="/books/freddy-finds-god" className="font-semibold text-link hover:underline">
+                Freddy Finds God
+              </Link>
+              , in 2020, followed by{" "}
+              <Link href="/books/in-the-image-of-god" className="font-semibold text-link hover:underline">
+                In the Image of God
+              </Link>{" "}
+              and{" "}
+              <Link href="/books/in-the-beginning-god" className="font-semibold text-link hover:underline">
+                In the Beginning&hellip;God
+              </Link>
+              .
             </p>
             <Button href="/about" variant="sky" className="mt-6">
               More About Joe
@@ -197,20 +211,7 @@ export default function Home() {
             <p className="mt-1.5 font-sans text-sm text-[#cfe0f2]">
               Spiritual Insights to help you Aim High.
             </p>
-            <form className="mt-5 flex flex-wrap gap-2.5">
-              <input
-                type="email"
-                placeholder="you@email.com"
-                aria-label="Email address"
-                className="min-w-[180px] flex-1 rounded-full border-none bg-white px-5 py-3.5 font-sans text-[15px] text-charcoal focus:outline-none"
-              />
-              <Button type="submit" variant="primary">
-                Subscribe
-              </Button>
-            </form>
-            <p className="mt-3.5 font-sans text-xs text-[#a9c1dc]">
-              Unsubscribe at any time. No spam, ever.
-            </p>
+            <NewsletterForm />
           </div>
         </Container>
       </section>

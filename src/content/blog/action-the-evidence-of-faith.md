@@ -50,3 +50,5 @@ Then, begin to take further action by stepping out in faith. Start with one smal
 ![](https://embed.filekitcdn.com/e/odrukN7kRqN3HQynjgRtUT/7Jrvz72Y9p5JVCXk4AAqjj)
 
 As you do, your faith will begin to grow. You’ll start to trust God more and believe that He is walking with you each step of the way. Take another step of faith, then another. Before you know it, you’ll be moving mountains.
+
+![](/images/blog/aim-high-newsletter-logo.png)

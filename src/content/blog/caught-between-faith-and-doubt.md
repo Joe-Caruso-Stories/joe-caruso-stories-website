@@ -73,7 +73,7 @@ So, what do you do when you lose your way, and find yourself caught between fait
 
 * * *
 
-![](/images/blog/2024-04-News-Letter-2.png)
+![](/images/blog/aim-high-newsletter-logo.png)
 
 If you enjoyed this post, consider subscribing to the **Aim High Newsletter**. You’ll receive my monthly spiritual insight and more, directly into your inbox. Just hit the subscribe button below to sign up.
 

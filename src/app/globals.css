@@ -76,3 +76,8 @@ body {
      forth in a feedback loop when scrolling slowly near it. */
   overflow-anchor: none;
 }
+
+.prose img[src*="aim-high-newsletter-logo"] {
+  width: 187.5px;
+  max-width: 100%;
+}
