@@ -78,7 +78,7 @@ export default function AboutPage() {
                 Before he was an author, Joe was a carpenter &mdash; but he
                 always had a passion for teaching, and spent years teaching
                 Sunday School at his home church. That experience led him on
-                an unexpected path: Joe became a high school teacher,
+                an unexpected path. Joe became a high school teacher,
                 spending over two decades teaching construction to teenagers
                 in St. Catharines, Ontario.
               </p>
