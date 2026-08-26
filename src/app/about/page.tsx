@@ -75,8 +75,8 @@ export default function AboutPage() {
                 .
               </p>
               <p>
-                Before he was an author, Joe was a carpenter &mdash; but he
-                always had a passion for teaching, and spent years teaching
+                Before he was an author, Joe was a carpenter, but he
+                always had a passion for teaching and spent years teaching
                 Sunday School at his home church. That experience led him on
                 an unexpected path. Joe became a high school teacher,
                 spending over two decades teaching construction to teenagers
