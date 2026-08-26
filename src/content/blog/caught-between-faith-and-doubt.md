@@ -1,6 +1,6 @@
 ---
 title: "Caught Between Faith and Doubt"
-date: "2024-04-28"
+date: "2024-04-24"
 excerpt: "There are times when we lose faith and begin to doubt. The pathway we once so clearly saw, becomes cluttered and hard to find. How do we move forward when we lose our way? How do we regain the faith we once had? What happens when we find ourselves caught between faith and doubt?"
 coverImage: "/images/blog/24-04.png"
 ---

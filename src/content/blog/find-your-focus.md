@@ -1,6 +1,6 @@
 ---
 title: "Find Your Focus"
-date: "2023-12-08"
+date: "2023-10-26"
 excerpt: "In a world with so many opinions, standards and value systems, we need to focus on something stable to guide our thoughts and actions."
 coverImage: "/images/blog/quote1.jpg"
 ---

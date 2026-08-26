@@ -1,6 +1,6 @@
 ---
 title: "Spiritual Maturity"
-date: "2024-12-27"
+date: "2024-08-27"
 excerpt: "How can we be spiritually mature if we’re always depending on God?"
 coverImage: "/images/blog/24-08.png"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Three “I Am Not” Statements of Jesus"
-date: "2025-02-13"
+date: "2024-11-14"
 excerpt: "Jesus gave seven “I Am” statements in the Gospel of John that give insight into his identity and character. But did you know that he also made three “I Am Not” statements? Discover the three things Jesus said he was not."
 coverImage: "/images/blog/24-11-1.png"
 ---

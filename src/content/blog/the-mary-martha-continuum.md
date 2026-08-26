@@ -1,6 +1,6 @@
 ---
 title: "The Mary & Martha Continuum"
-date: "2024-03-26"
+date: "2024-03-25"
 excerpt: "Are you the type of person who likes to stop and smell the roses, or do you prefer to put your nose to the grindstone and get things done? Seeing what’s called for in a particular situation isn’t always obvious. But we can usually see what is needed when we step back and look with a clear perspective."
 coverImage: "/images/blog/24-03.png"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Living Water"
-date: "2024-02-07"
+date: "2024-01-17"
 excerpt: "If we find ourselves in a continuous cycle of maintaining our everyday existence, we need to ask ourselves if there’s something more meaningful we can set our sights on."
 coverImage: "/images/blog/2024-01-Newsletter-2.png"
 ---

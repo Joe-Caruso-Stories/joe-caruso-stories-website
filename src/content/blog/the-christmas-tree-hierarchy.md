@@ -1,6 +1,6 @@
 ---
 title: "The Christmas Tree Hierarchy"
-date: "2025-02-16"
+date: "2024-12-11"
 excerpt: "What do we place as our highest value? Our Christmas tree may have the answer. But what can a Christmas tree possibly say about our values?"
 coverImage: "/images/blog/24-12.png"
 ---

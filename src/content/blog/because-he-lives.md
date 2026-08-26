@@ -1,6 +1,6 @@
 ---
 title: "Because He Lives"
-date: "2025-04-19"
+date: "2025-04-15"
 excerpt: "Because Jesus lives, we can face the uncertainty of tomorrow."
 coverImage: "/images/blog/25-04.png"
 ---

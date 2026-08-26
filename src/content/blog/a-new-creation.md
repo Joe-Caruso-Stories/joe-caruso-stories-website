@@ -1,6 +1,6 @@
 ---
 title: "A New Creation"
-date: "2025-02-22"
+date: "2025-01-22"
 excerpt: "Salvation is God’s plan to transform us into a new creation. But in practice, it’s hard to live out. Here are some tips to help exchange our “old nature” for a “new nature”."
 coverImage: "/images/blog/25-01-1-1.png"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Action – The Evidence of Faith"
-date: "2024-01-19"
+date: "2023-11-27"
 excerpt: "To say we have a belief or faith in something is great, but without action, it won’t go very far."
 coverImage: "/images/blog/Your-paragraph-text-3.png"
 ---

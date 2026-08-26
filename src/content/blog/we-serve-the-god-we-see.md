@@ -1,6 +1,6 @@
 ---
 title: "We Serve the God We See"
-date: "2024-07-07"
+date: "2024-06-27"
 excerpt: "However you see God, one thing is certain, the God you see will be the God you serve. Our perception always affect our judgment."
 coverImage: "/images/blog/Images.png"
 ---

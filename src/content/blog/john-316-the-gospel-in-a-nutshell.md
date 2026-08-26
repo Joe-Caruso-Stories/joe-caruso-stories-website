@@ -1,6 +1,6 @@
 ---
 title: "John 3:16 The Gospel in a Nutshell"
-date: "2024-08-06"
+date: "2024-07-24"
 excerpt: "John 3:16 is part of a conversation between Jesus and a Pharisee named Nicodemus. Nicodemus came to Jesus at night to ask him a very important question, “What must I do to be saved?”"
 coverImage: "/images/blog/24-07-1.png"
 ---

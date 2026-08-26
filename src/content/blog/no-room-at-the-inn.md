@@ -1,6 +1,6 @@
 ---
 title: "No Room at the Inn"
-date: "2024-01-31"
+date: "2023-12-13"
 excerpt: "It’s easy to get so caught up with the busyness of the season that we forget about who, the season is meant to honour. Like the innkeeper, we relegate Jesus to a small corner and get on with the busyness of our activities."
 coverImage: "/images/blog/5.png"
 ---

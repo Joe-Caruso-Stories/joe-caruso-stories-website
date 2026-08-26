@@ -1,6 +1,6 @@
 ---
 title: "In the Image of God"
-date: "2025-02-06"
+date: "2024-10-08"
 excerpt: "“What makes you…YOU?” At the heart of this question lies our identity. Find out how God made us to reflect his image."
 coverImage: "/images/blog/24-10-1.png"
 ---

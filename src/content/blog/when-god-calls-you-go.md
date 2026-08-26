@@ -1,6 +1,6 @@
 ---
 title: "When God Calls, You Go"
-date: "2024-02-24"
+date: "2024-02-21"
 excerpt: "We’ve all experienced it, a sudden thought or conviction that we feel compelled to act on. We can’t dismiss this call to action, it’s something we know deep down that we must respond to. Far too often though, God’s call goes unanswered. It’s not necessarily that we say no, but as time passes we find ourselves in the same place, leaving God’s call unaddressed."
 coverImage: "/images/blog/8-e1708656760779.png"
 ---

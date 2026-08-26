@@ -1,6 +1,6 @@
 ---
 title: "Who Are You? The Making of a Reputation"
-date: "2024-06-03"
+date: "2024-05-29"
 excerpt: "When others see us, they should see a reflection of Jesus shining through us."
 coverImage: "/images/blog/24-05-e1717372638478.png"
 ---

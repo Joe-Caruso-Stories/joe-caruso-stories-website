@@ -1,6 +1,6 @@
 ---
 title: "The Hero’s Journey"
-date: "2025-08-21"
+date: "2025-08-20"
 excerpt: "Salvation in Christ is a call to the adventure of a lifetime. Are you ready to begin your hero’s journey?"
 coverImage: "/images/blog/25-08.png"
 ---
