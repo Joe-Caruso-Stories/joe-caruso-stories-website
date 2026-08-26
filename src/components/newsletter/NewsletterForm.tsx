@@ -38,7 +38,7 @@ export function NewsletterForm() {
   if (status === "success") {
     return (
       <p className="mt-5 font-sans text-[15px] font-semibold text-white">
-        You&rsquo;re subscribed! Check your inbox to confirm.
+        You&rsquo;re subscribed! Welcome to the Aim High Newsletter.
       </p>
     );
   }

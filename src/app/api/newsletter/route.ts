@@ -23,19 +23,41 @@ export async function POST(request: Request) {
 
   const referrer = request.headers.get("referer") ?? undefined;
 
-  const kitResponse = await fetch(
-    `https://api.kit.com/v4/forms/${KIT_FORM_ID}/subscribers`,
+  // Kit's "add subscriber to form by email" endpoint 404s (broken/unsupported
+  // for this form), so this creates the subscriber first, then attaches them
+  // to the form by ID — the combination that actually works.
+  const createResponse = await fetch("https://api.kit.com/v4/subscribers", {
+    method: "POST",
+    headers: {
+      "X-Kit-Api-Key": apiKey,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email_address: email, referrer }),
+  });
+
+  if (!createResponse.ok) {
+    return NextResponse.json(
+      { error: "Something went wrong subscribing you. Please try again." },
+      { status: 502 }
+    );
+  }
+
+  const { subscriber } = (await createResponse.json()) as {
+    subscriber: { id: number };
+  };
+
+  const attachResponse = await fetch(
+    `https://api.kit.com/v4/forms/${KIT_FORM_ID}/subscribers/${subscriber.id}`,
     {
       method: "POST",
       headers: {
         "X-Kit-Api-Key": apiKey,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email_address: email, referrer }),
     }
   );
 
-  if (!kitResponse.ok) {
+  if (!attachResponse.ok) {
     return NextResponse.json(
       { error: "Something went wrong subscribing you. Please try again." },
       { status: 502 }
