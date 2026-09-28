@@ -23,6 +23,16 @@ export const metadata: Metadata = {
   },
   description:
     "Children's picture books by Joe Caruso that help kids see themselves the way God does.",
+  icons: {
+    // favicon.ico (small sizes) keeps the bigger, edge-to-edge mark for the
+    // browser tab, which is never circularly cropped. These larger PNGs use
+    // a version shrunk to fit inside a circle, for Google and anything else
+    // that prefers a bigger icon and displays it in a circular badge.
+    icon: [
+      { url: "/icon-96.png", sizes: "96x96", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({
