@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "@/components/ui/Button";
 
 export function BookCard({
   slug,
@@ -51,12 +52,9 @@ export function BookCard({
           </p>
         )}
         {cta === "read" ? (
-          <Link
-            href={`/books/${slug}`}
-            className="mt-5 flex w-full items-center justify-center gap-1.5 rounded-full bg-amber px-4.5 py-3 font-display text-sm font-semibold text-on-gold transition-transform hover:-translate-y-0.5 hover:bg-amber-deep"
-          >
+          <Button href={`/books/${slug}`} variant="primary" className="mt-5 self-start">
             Read More
-          </Link>
+          </Button>
         ) : (
           amazonUrl && (
             <a
