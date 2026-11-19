@@ -11,7 +11,7 @@ export const BOOKS = [
       "“Let there be light!” God said with a shout.\n“Make it shine as bright as can be!”",
     blurb:
       "With playful rhymes and brilliant illustrations, In the Beginning… God celebrates each day of creation while reminding all God's children of their role in His magnificent, one-of-a-kind design.",
-    amazonUrl: "https://a.co/d/cO3doj6",
+    amazonUrl: "https://www.amazon.com/Beginning-God-Story-Creation-Responsibility/dp/1777323169",
     coverImage: "/images/books/in-the-beginning-god.jpg",
     story: [
       {
@@ -78,7 +78,7 @@ export const BOOKS = [
       "Freddy wakes up with a BIG idea.\nHe is going to find God. …But where could God be?",
     blurb:
       "Join Freddy on an inspiring journey as he searches his town for God, and discovers along the way that God is found when we care for others — and that finding God is easier than we think.",
-    amazonUrl: "https://www.amazon.com/dp/B08NY21D9Y",
+    amazonUrl: "https://www.amazon.com/Freddy-Finds-God-Meaning-Purpose/dp/177732310X",
     coverImage: "/images/books/freddy-finds-god.jpg",
     story: [
       {
