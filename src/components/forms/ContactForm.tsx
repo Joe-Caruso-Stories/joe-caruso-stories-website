@@ -5,6 +5,15 @@ import { Button } from "@/components/ui/Button";
 
 type Status = "idle" | "loading" | "success" | "error";
 
+const SUBJECTS = [
+  "Question about a book",
+  "Speaking or school visit",
+  "Something else",
+];
+
+const FIELD_CLASS =
+  "w-full rounded-xl border border-sand bg-paper px-4 py-3 font-sans text-sm text-charcoal placeholder:text-taupe/70 focus:border-amber focus:outline-none";
+
 export function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState("");
@@ -24,7 +33,9 @@ export function ContactForm() {
         body: JSON.stringify({
           name: data.get("name"),
           email: data.get("email"),
+          subject: data.get("subject"),
           message: data.get("message"),
+          website: data.get("website"),
         }),
       });
 
@@ -57,7 +68,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+    <form onSubmit={handleSubmit} className="relative flex flex-col gap-5">
       <div>
         <label
           htmlFor="name"
@@ -70,7 +81,8 @@ export function ContactForm() {
           name="name"
           type="text"
           required
-          className="w-full rounded-xl border border-sand bg-paper px-4 py-3 font-sans text-sm text-charcoal placeholder:text-taupe/70 focus:border-amber focus:outline-none"
+          maxLength={100}
+          className={FIELD_CLASS}
         />
       </div>
 
@@ -86,8 +98,25 @@ export function ContactForm() {
           name="email"
           type="email"
           required
-          className="w-full rounded-xl border border-sand bg-paper px-4 py-3 font-sans text-sm text-charcoal placeholder:text-taupe/70 focus:border-amber focus:outline-none"
+          maxLength={200}
+          className={FIELD_CLASS}
         />
+      </div>
+
+      <div>
+        <label
+          htmlFor="subject"
+          className="mb-1.5 block font-sans text-sm font-medium text-charcoal"
+        >
+          Subject
+        </label>
+        <select id="subject" name="subject" defaultValue={SUBJECTS[0]} className={FIELD_CLASS}>
+          {SUBJECTS.map((subject) => (
+            <option key={subject} value={subject}>
+              {subject}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div>
@@ -101,9 +130,15 @@ export function ContactForm() {
           id="message"
           name="message"
           required
-          rows={5}
-          className="w-full resize-none rounded-xl border border-sand bg-paper px-4 py-3 font-sans text-sm text-charcoal placeholder:text-taupe/70 focus:border-amber focus:outline-none"
+          rows={6}
+          maxLength={5000}
+          className={`${FIELD_CLASS} resize-none`}
         />
+      </div>
+
+      <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
+        <label htmlFor="website">Leave this field empty</label>
+        <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
       </div>
 
       {status === "error" && (

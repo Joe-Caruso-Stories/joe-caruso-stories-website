@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Button } from "@/components/ui/Button";
+import { ContactForm } from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
   description: "Get in touch with author Joe Caruso.",
 };
 
-const CONTACT_EMAIL = "joecarusostories@gmail.com";
+const CONTACT_EMAIL = "joe@joecarusostories.com";
 
 export default function ContactPage() {
   return (
@@ -17,22 +17,20 @@ export default function ContactPage() {
         <SectionHeading eyebrow="Get in Touch" title="Contact Joe" />
         <p className="mt-4 text-center font-sans text-taupe">
           Questions about a book, a speaking engagement, or just want to say
-          hello? Send Joe an email.
+          hello? Send a message below.
         </p>
-        <div className="mt-10 flex flex-col items-center gap-4">
-          <Button href={`mailto:${CONTACT_EMAIL}`} variant="primary">
-            Email Joe
-          </Button>
-          <p className="font-sans text-sm text-taupe">
-            or write to{" "}
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
-              className="font-semibold text-link hover:underline"
-            >
-              {CONTACT_EMAIL}
-            </a>
-          </p>
+        <div className="mt-10">
+          <ContactForm />
         </div>
+        <p className="mt-8 text-center font-sans text-sm text-taupe">
+          Prefer email? Write to{" "}
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="font-semibold text-link hover:underline"
+          >
+            {CONTACT_EMAIL}
+          </a>
+        </p>
       </Container>
     </section>
   );
