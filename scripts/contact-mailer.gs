@@ -4,11 +4,6 @@
 // in the deployed script and in the Cloudflare secret CONTACT_SECRET.
 const TO = "joe@joecarusostories.com";
 const SECRET = "PASTE_SECRET_HERE";
-const SUBJECTS = [
-  "Question about a book",
-  "Speaking or school visit",
-  "Something else",
-];
 
 function doGet() {
   return json({ ok: true, info: "Contact mailer is running." });
@@ -21,7 +16,7 @@ function doPost(e) {
 
     const name = String(data.name || "").replace(/[\r\n]+/g, " ").trim().slice(0, 100);
     const email = String(data.email || "").trim().slice(0, 200);
-    const subject = SUBJECTS.indexOf(data.subject) >= 0 ? data.subject : "Something else";
+    const subject = String(data.subject || "").replace(/[\r\n]+/g, " ").trim().slice(0, 100);
     const message = String(data.message || "").trim().slice(0, 5000);
 
     const emailOk = /^[^\s@<>,;]+@[^\s@<>,;]+\.[^\s@<>,;]+$/.test(email);
@@ -31,12 +26,12 @@ function doPost(e) {
       to: TO,
       replyTo: email,
       name: "Joe Caruso Stories website",
-      subject: "[Website] " + subject + " - " + name,
+      subject: "[Website] " + (subject || "New message") + " - " + name,
       body:
         "New message from the joecarusostories.com contact form\n\n" +
         "Name: " + name + "\n" +
         "Email: " + email + "\n" +
-        "Subject: " + subject + "\n\n" +
+        "Subject: " + (subject || "(none given)") + "\n\n" +
         message + "\n\n" +
         "(Hit Reply to answer " + name + " directly.)",
     });

@@ -5,12 +5,6 @@ import { Button } from "@/components/ui/Button";
 
 type Status = "idle" | "loading" | "success" | "error";
 
-const SUBJECTS = [
-  "Question about a book",
-  "Speaking or school visit",
-  "Something else",
-];
-
 const FIELD_CLASS =
   "w-full rounded-xl border border-sand bg-paper px-4 py-3 font-sans text-sm text-charcoal placeholder:text-taupe/70 focus:border-amber focus:outline-none";
 
@@ -108,15 +102,9 @@ export function ContactForm() {
           htmlFor="subject"
           className="mb-1.5 block font-sans text-sm font-medium text-charcoal"
         >
-          Subject
+          Subject <span className="font-normal text-taupe">(optional)</span>
         </label>
-        <select id="subject" name="subject" defaultValue={SUBJECTS[0]} className={FIELD_CLASS}>
-          {SUBJECTS.map((subject) => (
-            <option key={subject} value={subject}>
-              {subject}
-            </option>
-          ))}
-        </select>
+        <input id="subject" name="subject" type="text" maxLength={100} className={FIELD_CLASS} />
       </div>
 
       <div>

@@ -1,11 +1,5 @@
 import { NextResponse } from "next/server";
 
-const SUBJECTS = [
-  "Question about a book",
-  "Speaking or school visit",
-  "Something else",
-];
-
 const EMAIL_PATTERN = /^[^\s@<>,;]+@[^\s@<>,;]+\.[^\s@<>,;]+$/;
 
 function field(body: Record<string, unknown> | null, key: string, max: number) {
@@ -25,10 +19,7 @@ export async function POST(request: Request) {
   const name = field(body, "name", 100);
   const email = field(body, "email", 200);
   const message = field(body, "message", 5000);
-  const requestedSubject = field(body, "subject", 100);
-  const subject = SUBJECTS.includes(requestedSubject)
-    ? requestedSubject
-    : "Something else";
+  const subject = field(body, "subject", 100).replace(/[\r\n]+/g, " ");
 
   if (!name || !email || !message) {
     return NextResponse.json(
