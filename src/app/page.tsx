@@ -96,6 +96,7 @@ export default function Home() {
                 coverImage={book.coverImage}
                 amazonUrl={book.amazonUrl}
                 award={"award" in book ? book.award : undefined}
+                cta="read"
               />
             ))}
           </div>

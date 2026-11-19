@@ -9,6 +9,7 @@ export function BookCard({
   coverImage,
   amazonUrl,
   award,
+  cta = "buy",
 }: {
   slug: string;
   title: string;
@@ -17,6 +18,7 @@ export function BookCard({
   coverImage?: string;
   amazonUrl?: string;
   award?: { image: string; label: string };
+  cta?: "buy" | "read";
 }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-[22px] border border-sand bg-paper shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
@@ -48,15 +50,24 @@ export function BookCard({
             {cardQuote}
           </p>
         )}
-        {amazonUrl && (
-          <a
-            href={amazonUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+        {cta === "read" ? (
+          <Link
+            href={`/books/${slug}`}
             className="mt-5 flex w-full items-center justify-center gap-1.5 rounded-full bg-amber px-4.5 py-3 font-display text-sm font-semibold text-on-gold transition-transform hover:-translate-y-0.5 hover:bg-amber-deep"
           >
-            Buy on Amazon
-          </a>
+            Read More
+          </Link>
+        ) : (
+          amazonUrl && (
+            <a
+              href={amazonUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 flex w-full items-center justify-center gap-1.5 rounded-full bg-amber px-4.5 py-3 font-display text-sm font-semibold text-on-gold transition-transform hover:-translate-y-0.5 hover:bg-amber-deep"
+            >
+              Buy on Amazon
+            </a>
+          )
         )}
       </div>
     </article>
