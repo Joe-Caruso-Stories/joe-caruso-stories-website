@@ -67,6 +67,7 @@ export default async function BookDetailPage({
                 coverImage={b.coverImage}
                 amazonUrl={b.amazonUrl}
                 award={"award" in b ? b.award : undefined}
+                cta="read"
               />
             ))}
           </div>
