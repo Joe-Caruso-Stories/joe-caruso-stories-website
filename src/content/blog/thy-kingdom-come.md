@@ -1,13 +1,12 @@
 ---
 title: "Thy Kingdom Come"
+subtitle: "Radical Teachings From the Sermon on the Mount"
 date: "2026-11-27"
 excerpt: "When the crowd heard Jesus say the words “Thy kingdom come,” they expected a political revolution. But Jesus had something else in mind…"
 coverImage: "/images/blog/26-11.png"
 ---
 
 ## **Thy Kingdom Come**
-
-### **Radical Teachings From the Sermon on the Mount**
 
 #### By Joe Caruso Stories
 

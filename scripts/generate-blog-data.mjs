@@ -46,6 +46,7 @@ const posts = slugs.map((slug) => {
   return {
     slug,
     title: data.title,
+    subtitle: data.subtitle ?? null,
     date: data.date,
     excerpt: data.excerpt,
     coverImage: data.coverImage ?? null,
@@ -63,6 +64,7 @@ const body =
   "export type GeneratedPost = {\n" +
   "  slug: string;\n" +
   "  title: string;\n" +
+  "  subtitle: string | null;\n" +
   "  date: string;\n" +
   "  excerpt: string;\n" +
   "  coverImage: string | null;\n" +

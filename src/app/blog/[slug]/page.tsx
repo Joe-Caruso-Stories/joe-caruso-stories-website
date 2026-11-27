@@ -58,6 +58,11 @@ export default async function BlogPostPage({
         <h1 className="font-display text-3xl font-bold leading-tight text-charcoal sm:text-4xl">
           {post.title}
         </h1>
+        {post.subtitle && (
+          <p className="mt-2 font-display text-xl font-semibold leading-snug text-charcoal/80">
+            {post.subtitle}
+          </p>
+        )}
         <div className="mt-2">
           <PostMeta date={post.date} author="Joe Caruso" />
         </div>
