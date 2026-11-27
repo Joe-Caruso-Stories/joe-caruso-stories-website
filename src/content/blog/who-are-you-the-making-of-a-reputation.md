@@ -7,8 +7,6 @@ coverImage: "/images/blog/24-05-e1717372638478.png"
 
 ## **Who Are You?** 
 
-## **The Making of a Reputation**
-
 #### By Joe Caruso Stories
 
 Who do others say that you are? Does it matter, or is it just what you think of yourself that counts? 

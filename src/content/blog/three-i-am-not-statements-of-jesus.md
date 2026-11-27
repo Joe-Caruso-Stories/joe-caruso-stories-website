@@ -7,8 +7,6 @@ coverImage: "/images/blog/24-11-1.png"
 
 ## **Three “I Am Not”**
 
-## **Statements of Jesus**
-
 #### By Joe Caruso Stories
 
 If you’ve been a Christian for any length of time, you’re probably familiar with the seven “I Am” statements of Jesus. They’re found throughout the Gospel of John. These statements give us a beautiful insight into Jesus’ identity and character.

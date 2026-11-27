@@ -7,8 +7,6 @@ coverImage: "/images/blog/24-07-1.png"
 
 ## **John 3:16**
 
-## **The Gospel in a Nutshell**
-
 #### By Joe Caruso Stories
 
 John 3:16 is arguably the most popular verse in the entire Bible. It seems to show up everywhere. It’s often quoted by pastors, memorized by new believers, seen at sporting events and found on social media posts. If there’s one verse worth knowing, this is it. Why? Because this verse describes God’s plan of salvation in a nutshell. 
