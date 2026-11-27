@@ -39,7 +39,9 @@ const posts = slugs.map((slug) => {
   // the date now, as one combined byline/date line under the title.
   const html = withNewTabLinks
     .replace(/^<h2>.*?<\/h2>\n?/, "")
-    .replace(/^<h4>By Joe Caruso Stories<\/h4>\n?/, "");
+    // Posts with a subtitle line (e.g. "<h3>A Story of Identity…</h3>") have
+    // the byline second, not first, so match it anywhere near the top.
+    .replace(/<h4>By Joe Caruso Stories<\/h4>\n?/, "");
 
   return {
     slug,
