@@ -45,7 +45,7 @@ This time, however, Jesus was describing an entirely different kind of kingdom.
 
 Jesus’ Sermon on the Mount wasn’t simply a set of rules to follow. Jesus was making the case that there was another way to live that was contrary to any human thinking.
 
-In making his case, Jesus used provocative language to describe this upside-down heavenly kingdom. With statements like “blessed are the poor in spirit,” “if your eye causes you to stumble, gouge it out,” and “love your enemies,” Jesus was planting seeds in the crowds hearts to help them contemplate what God’s kingdom looks like.
+In making his case, Jesus used provocative language to describe this upside-down heavenly kingdom. With statements like “blessed are the poor in spirit,” “if your eye causes you to stumble, gouge it out,” and “love your enemies,” Jesus was planting seeds in the crowd’s hearts to help them contemplate what God’s kingdom looks like.
 
 The following chart highlights some of the radical principles Jesus used when teaching about God’s kingdom here on earth.
 
